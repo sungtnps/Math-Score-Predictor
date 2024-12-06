@@ -8,7 +8,7 @@ import pandas as pd
 model = tf.keras.models.load_model('math_score_predictor.h5')
 
 # โหลดและเตรียมข้อมูลต้นแบบสำหรับ LabelEncoder และ Scaler
-data = pd.read_csv("path/to/your/StudentsPerFormance.csv")
+data = pd.read_csv("StudentsPerFormance.csv")
 categorical_cols = ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']
 
 encoders = {}
